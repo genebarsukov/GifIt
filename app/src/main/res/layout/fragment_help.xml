@@ -1,0 +1,143 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/opaque_white"
+    tools:context="codewrencher.gifit.ui.help.HelpFragment">
+
+    <LinearLayout
+        android:background="@drawable/bg_item"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_thin"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info      "
+            android:textSize="@dimen/text_heading"
+            android:textColor="@color/darker_blue"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:id="@+id/page_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="@dimen/text_heading"
+            android:textColor="@color/darker_blue"/>
+        <TextView
+            android:id="@+id/of"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" of "
+            android:textSize="@dimen/text_heading"
+            android:textColor="@color/darker_blue" />
+        <TextView
+            android:id="@+id/page_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="@dimen/text_heading"
+            android:textColor="@color/darker_blue" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/close"
+        android:src="@drawable/button_close"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="@dimen/margin_triple"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:adjustViewBounds="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/help_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help Caption"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/darker_blue"
+            android:layout_marginBottom="@dimen/margin_double" />
+
+        <ImageView
+            android:id="@+id/help_image"
+            android:src="@drawable/capture_100_black"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_triple" />
+
+        <TextView
+            android:id="@+id/help_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help Text"
+            android:textSize="@dimen/text"
+            android:textColor="@color/darker_blue"
+            android:layout_marginBottom="@dimen/margin_triple" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/left_arrow"
+                android:src="@mipmap/arrow_single_left_pressed"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" />
+
+            <Button
+                android:id="@+id/got_it"
+                android:background="@drawable/bg_item_states"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Got It"
+                android:textColor="@color/darker_blue"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:id="@+id/right_arrow"
+                android:src="@mipmap/arrow_single_right_pressed"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bread_crumbs"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

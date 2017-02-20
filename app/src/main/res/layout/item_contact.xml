@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:background="@drawable/bg_blue_horizontal_borders"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left">
+
+            <CheckBox
+                android:id="@+id/check"
+                android:button="@drawable/checkbox_states"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_large"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin_double" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                        android:id="@+id/display_name"
+                        android:text="Display Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary_light"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:layout_gravity="left" />
+
+                <TextView
+                    android:id="@+id/first_name"
+                    android:text="First Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sharing_text_blue"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/last_name"
+                    android:text="Last Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sharing_text_blue"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:text="Phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sharing_text_blue"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:text="E-mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sharing_text_blue"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

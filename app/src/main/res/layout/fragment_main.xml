@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center"
+    android:alpha="1.0"
+    tools:context="codewrencher.gifit.ui.MainActivity$PlaceholderFragment">
+
+    <ImageView
+        android:id="@+id/trump_logo"
+        android:src="@drawable/trump_like_the_donald_f3_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/help"
+        android:src="@drawable/button_help"
+        android:background="@null"
+        android:layout_width="@dimen/icon_small"
+        android:layout_height="@dimen/icon_small"
+        android:layout_margin="@dimen/margin"
+        android:layout_gravity="right|top"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/capture"
+        android:src="@drawable/button_american_camera"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_triple"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <ImageButton
+                android:id="@+id/library"
+                android:src="@drawable/button_all_images"
+                android:background="@null"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="@dimen/margin_double" />
+
+        <ImageButton
+                android:id="@+id/gallery"
+                android:src="@drawable/button_gallery"
+                android:background="@null"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/margin_double" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bread_crumbs"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

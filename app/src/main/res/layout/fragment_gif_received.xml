@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/translucent_black"
+    android:id="@+id/root_layout">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loaded_gif_container"
+        android:layout_gravity="center"></FrameLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/chain_gif"
+        android:src="@drawable/button_chain_gif"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="@dimen/margin_huge"
+        android:layout_marginLeft="@dimen/margin" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#00000c"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:gravity="center_vertical|left"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView2"
+        android:layout_gravity="center"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/bread_crumbs"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

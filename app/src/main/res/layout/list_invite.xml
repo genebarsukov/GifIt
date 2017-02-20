@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sharing_bg"
+    android:gravity="center"
+    android:id="@+id/quote_list_root">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_centerInParent="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small" >
+
+            <ImageButton
+                android:id="@+id/close"
+                android:src="@drawable/button_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:background="@null" />
+
+            <ImageButton
+                android:id="@+id/done"
+                android:src="@drawable/button_done"
+                android:background="@null"
+                android:layout_width="@dimen/margin_colossal"
+                android:layout_height="@dimen/icon"
+                android:visibility="visible"
+                android:layout_gravity="center_horizontal|top"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="@dimen/margin" />
+
+            <ImageButton
+                android:id="@+id/search"
+                android:src="@drawable/button_search"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/margin_double"
+                android:layout_marginTop="@dimen/margin" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/heading"
+                android:text="Invite Your Peeps to GIF With You"
+                android:textColor="@color/sharing_text_blue"
+                android:textSize="@dimen/text"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:phoneNumber="false" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/search_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:background="@drawable/text_box_dark_states"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_large"
+                    android:textColor="@color/text_secondary"
+                    android:hint="email or phone number"
+                    android:textColorHint="@color/gray"
+                    android:textCursorDrawable="@null"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/margin_double"
+                    android:padding="@dimen/margin_small" />
+
+            </LinearLayout>
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/scroll_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:requiresFadingEdge="vertical"
+                android:fadingEdgeLength="10dp"
+                android:cacheColorHint="@color/border_blue"
+                android:fillViewport="false"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/scroll_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:measureWithLargestChild="false" />
+
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

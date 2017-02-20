@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/main_notification_image"
+            android:src="@drawable/app_gif_notification_50"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="false"
+            android:background="@null" />
+
+        <TextView
+            android:id="@+id/notification_text"
+            android:text="MK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/bg"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:textStyle="bold" />
+    </FrameLayout>
+</LinearLayout>

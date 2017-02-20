@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="video_frame_thumbnail_scaler"> 6 </integer>
+    <integer name="ad_height_dp"> 50 </integer>
+    <integer name="max_video_frame_width"> 500 </integer>
+</resources>

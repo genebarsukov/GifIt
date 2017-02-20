@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">GifIt</string>
+
+    <string name="test_banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="top_banner">ca-app-pub-6828269133214597/8636849268</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_image_workspace">Image Workspace</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_activity_gallery">Gallery</string>
+    <string name="title_activity_image_details">Image Details</string>
+
+    <string-array name="image_ids">
+        <item>@drawable/capture_100</item>
+        <item>@drawable/capture_100_black</item>
+        <item>@drawable/gallery_100</item>
+        <item>@drawable/gallery_100_black</item>
+        <item>@drawable/save_glowing_100</item>
+        <item>@drawable/save_glowing_100_pressed</item>
+        <item>@drawable/share_glowing_100</item>
+        <item>@drawable/share_glowing_100_pressed</item>
+        <item>@drawable/shutter_button_100</item>
+        <item>@drawable/shutter_button_pressed_100</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+
+    <string name="request_permission">Please allow this application to use your camera</string>
+    <string name="camera_error">Something went wrong with the camera</string>
+</resources>

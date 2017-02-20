@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:id="@+id/item_root">
+
+    <LinearLayout
+        android:id="@+id/category_item"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_states"
+        android:baselineAligned="false"
+        android:layout_marginRight="3dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/song_header">
+
+            <TextView
+                android:id="@+id/category_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_heading"
+                android:textColor="@color/text_main"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/spacer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_heading"
+                android:textColor="@color/text_main"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:outlineProvider="paddedBounds"
+            android:id="@+id/scroll_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:requiresFadingEdge="vertical"
+            android:fadingEdgeLength="20dp"
+            android:cacheColorHint="@color/border_blue"
+            android:fillViewport="false"
+            android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/scroll_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:measureWithLargestChild="false"
+            android:padding="0dp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

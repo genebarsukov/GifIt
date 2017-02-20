@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/notification_counter"
+    android:keepScreenOn="false">
+
+    <FrameLayout
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/main_notification_counter_image"
+            android:src="@drawable/button_app_notification_counter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null" />
+
+        <TextView
+            android:id="@+id/notification_counter_text"
+            android:text="MK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_heading"
+            android:textColor="@color/bg"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:layout_marginTop="@dimen/margin_intermediate"
+            android:layout_marginLeft="@dimen/margin_thin"
+            android:textStyle="bold" />
+    </FrameLayout>
+</LinearLayout>

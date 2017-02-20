@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="help_captions">
+        <item>Camera</item>
+        <item>Image Library</item>
+        <item>Meme Gallery</item>
+        <item>Navigating Tabs</item>
+        <item>Sharing</item>
+        <item>Deleting</item>
+        <item>Editing</item>
+    </string-array>
+    <string-array name="help_images">
+        <item>american_camera_150</item>
+        <item>pics_100</item>
+        <item>memes_100</item>
+        <item>swipe_left_right_300</item>
+        <item>swipe_up</item>
+        <item>swipe_down</item>
+        <item>swipe_down</item>
+    </string-array>
+    <string-array name="help_text">
+        <item>Take a pic and turn it into a meme</item>
+        <item>Create a meme from an existing pic</item>
+        <item>View and share your saved memes</item>
+        <item>Swipe left or right to move between tabs once they have been opened</item>
+        <item>Swipe up to share a meme you have created</item>
+        <item>If you see a trash bin icon in the lower right, swipe down to Delete</item>
+        <item>If no trash bin is visible, swipe down to Edit</item>
+
+    </string-array>
+</resources>

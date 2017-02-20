@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sharing_bg"
+    android:gravity="center"
+    android:id="@+id/quote_list_root">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_centerInParent="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small" >
+
+            <ImageButton
+                android:id="@+id/close"
+                android:src="@drawable/button_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:background="@null" />
+
+            <ImageButton
+                android:id="@+id/done"
+                android:src="@drawable/button_done"
+                android:background="@null"
+                android:layout_width="@dimen/margin_colossal"
+                android:layout_height="@dimen/icon"
+                android:visibility="visible"
+                android:layout_gravity="center_horizontal|top"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="@dimen/margin" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/scroll_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:requiresFadingEdge="vertical"
+                android:fadingEdgeLength="10dp"
+                android:cacheColorHint="@color/border_blue"
+                android:fillViewport="false"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/scroll_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:measureWithLargestChild="false" />
+
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center">
+
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:numColumns="3"
+        android:focusable="true"
+        android:clickable="true"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_thin" />
+
+    <ProgressBar
+            android:id="@+id/progress_bar_top"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal|top" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_bottom"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/margin_triple" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_corner"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bread_crumbs"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_gravity="bottom" />
+
+    <!-- android:indeterminateDrawable="@drawable/progress_bar" -->
+</FrameLayout>

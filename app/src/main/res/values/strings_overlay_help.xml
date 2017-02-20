@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cam_header">Here To Help!</string>
+    <string name="gif_space_header">Here To Help!</string>
+
+    <string name="cam_intro_1">
+        Thank you for trying GifIt!\nYou can close this window and come back to it any time by
+        clicking the Gears icon on the right of the screen:
+    </string>
+    <string name="cam_intro_2"> This is a brief overview of what you can do with it. </string>
+    <string name="cam_summary_1">
+        You can do 3 things with GifIt:\n
+        1. Snap Gifs\n
+        2. Customize Gifs\n
+        3. Share Gifs\n
+        4. Swipe left or right to switch between the Camera and the Gif view.
+    </string>
+    <string name="cam_summary_2">
+        The app currently consists of 2 tabs. You flip between your camera
+        and your workspace by swiping left and right. Your workspace tab appears once you have
+        created a gif but your camera tab always persists.
+    </string>
+    <string name="ad_shade_snippet">
+        Ad Shade: Ads are important in supporting this pro-bono app, but some
+        can get irritating when they try too hard to grab your attention. If that is the case,
+        simply tap the ad shade button and it slides an opaque screen around the ad. You can still
+        see a little bit of the ad and can still click it if you want to.
+    </string>
+    <string name="shutter_snippet">
+        Shutter Button: Like the button on your camera but a lil
+        different. Press it once and your gif will start capturing. You will see its progress with 
+        the red progress bar circling the button. You can interrupt the capture by pressing it once
+        again while the capture is running. Once it is done capturing the Gif frames, the app will 
+        flip to the gif workspace and build your gif once it is done capturing.
+    </string>
+    <string name="frame_rate_snippet">
+        Frame Rate Scroller: Set the gif camera frames per second (scroll up or down). Set how fast
+        you want to capture gif frames. A higher value means a smoother gif, but also a shorter
+        time frame overall for your gif, because the number of frames you can take is limited.
+    </string>
+    <string name="frame_count_snippet">
+        Frame Count Scroller: Set the number of frames to take for your gif. Around 6 is good. Going over 10 frames will
+        start taking a little while longer to render your Gifs.
+    </string>
+    <string name="shutter_sound_snippet">
+        Shutter Sound Toggle: Turn the rapid shot camera shutter sound on or off.
+    </string>
+    <string name="flip_cam_snippet">
+        Flip Camera: Flip between your phone\'s front and back facing cameras.
+    </string>
+    <string name="set_flash_snippet">
+        Set Flash: Set the flash mode for your camera. Please be aware that because of the way we have this app
+        set up capturing rapid frames, some phones may only have limited flash modes and for some
+        the flash may not function at all. We still chose to keep this feature because it will work
+        for some of you!
+    </string>
+    <string name="T_snippet">
+        Add Text: Open a text box and add text to your Gif! Hit the check button that appears to update your
+        Gif with the change
+    </string>
+    <string name="share_snippet">
+        Share: Share your Gif! with friends! Opens up a sharing menu where you can pick your sharing method
+        of choice, Flicking upwards on your Gif will also do this. You Gifs are only saved when they
+        are shared - we would not want to fill up your phone with junk you do not intend to keep.
+    </string>
+    <string name="glove_snippet">
+        Move, Rotate, Resize: This glove indicates that the current resource on the screen can be moved, rotated, and
+        resized. It goes away after you click it or when you click the image resource in question.
+    </string>
+    <string name="check_snippet">
+        Check Button: Confirm changes and reload your Gif. When you see this, it means that you
+        probably made some changes to your Gif and hitting this button will update the gif image
+        with the changes. You could have added some text, removed some unwanted frames, or changed
+        the gif speed. Click on this button to save your changes and reload the Gif!
+    </string>
+    <string name="gif_speed_slider_snippet">
+        Change Gif Speed: Use this slider to change the speed of the gif you just created. Gif speed refers to how
+        fast the image frames change from one to another. Move it to the right to speed the Gif up
+        and move it to the left to slow the Gif down.The changes cannot be made in real time and the
+        Gif needs to be reloaded for the changes to take effect. Click on the round check button
+        that appears after you move the slider to reload the gif and check out how fast it is now!
+    </string>
+    <string name="frames_snippet">
+        Editing Gif Frames: When you create your gif, at the bottom of the screen you will see all
+        of the image frames included in that Gif. You can add and remove these frames as you wish to
+        tune your Gif to your liking. Simply click on a frame and you will see a red X over it. Then
+        click the check button that should have appeared and your Gif will be recreated with the
+        chosen frame removed. You can remove all but 1 frame. You can also add back frames that have
+        been removed if you change your mind. Simply click the frame that has a red X over it that
+        you wish to add back and then reload the Gif using the check button. Your Gif will be
+        reloaded with the chosen frame present.
+    </string>
+
+    <string name="help_outro_1_1"> Please Email us at </string>
+    <string name="help_outro_1_2"> codewrencher@gmail.com </string>
+    <string name="help_outro_1_3"> with any comments / concerns / suggestions </string>
+
+    <string name="help_outro_2_1"> Please visit </string>
+    <string name="help_outro_2_2"> www.CodeWrencher.com </string>
+    <string name="help_outro_2_3"> for more apps and info! </string>
+
+</resources>

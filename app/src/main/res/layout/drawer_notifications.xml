@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/icon"
+            android:scrollIndicators="none">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/drawer_container"
+                android:visibility="gone">
+
+                <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:outlineProvider="paddedBounds"
+                    android:id="@+id/scroll_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:requiresFadingEdge="horizontal"
+                    android:fadingEdgeLength="10dp"
+                    android:cacheColorHint="@color/translucent_black"
+                    android:fillViewport="false"
+                    android:layout_gravity="right|top"
+                    android:measureAllChildren="false">
+
+                    <LinearLayout
+                        android:id="@+id/drawer_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:measureWithLargestChild="false"
+                        android:nestedScrollingEnabled="false" />
+                </HorizontalScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drawer_trigger"
+            android:layout_gravity="right|top"></LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
